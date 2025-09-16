@@ -210,6 +210,11 @@ python -c "import tkinter; print('tkinter OK')"
 dot -V
 ```
 
+# 打包成exe命令
+```bash
+pyinstaller --onefile --windowed --icon=default.ico --additional-hooks-dir=. gui_scanner.py --name "vuln_scanner"
+```
+
 ## 使用方法
 
 ### 🚀 企业级扫描器（推荐）
@@ -925,10 +930,6 @@ pip install Pillow
 
 ⚠️ **重要提醒**: 本工具设计用于防御性安全研究，严禁用于恶意目的。使用者需遵守当地法律法规和网络安全相关规定。
 
-## 打包成exe命令
-```bash
-pyinstaller --onefile --windowed --icon=default.ico --additional-hooks-dir=. gui_scanner.py --name "vuln_scanner"
-```
 ---
 
 🌟 **如果您觉得这个项目有用，请给我们一个 Star！** 🌟
